@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- app & activity titles -->
+    <string name="app_name">Owl</string>
+    <string name="contacts">Contacts</string>
+
+    <!-- contacts tab -->
+    <string name="create_contact_button_label">Create Contact</string>
+    <string name="select_contact_button_label">Select Contact</string>
+
+    <!-- contact edit activity -->
+    <string name="contact_info"><b><font size="18">Contact Info</font></b></string>
+    <string name="name_label"><b>Name:</b></string>
+    <string name="name_hint">Name</string>
+    <string name="frequency_label"><b>Frequency:</b></string>
+    <string name="frequency_number_of_days_hint"><font size="14"># of minutes between reminders - 5 by default</font></string>
+    <string name="selected_start_date_label"><b>First Notification:</b></string>
+    <string name="next_alarm_label"><b>Next Notification:</b></string>
+    <string name="start_date_button_label">Select Start Date</string>
+    <string name="pick_time_button_label">Select Start Time</string>
+    <string name="phone_number_label"><b>Phone Number:</b></string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="status_switch_label">Notifications On or Off?</string>
+    <string name="save_contact_button_label">Save Contact</string>
+    <string name="delete_contact_button_label">Delete Contact</string>
+    <string name="contact_saved_toast">Contact Saved</string>
+    <string name="contact_deleted_toast">Contact Deleted</string>
+    <string name="notifications_turned_off">Notifications turned off</string>
+    <string name="space"> </string>
+
+    <!-- contact edit validation warnings -->
+    <string name="name_missing_toast">Name required</string>
+    <string name="name_too_long_toast">Name must be 100 characters or less</string>
+    <string name="min_frequency_toast">Frequency must be at least 1 day</string>
+    <string name="max_frequency_toast">365 days is the maximum frequency</string>
+    <string name="included_country_code_toast">Country code should be selected from drop-down, not entered into the phone number field</string>
+    <string name="phone_number_missing_toast">Phone is required</string>
+    <string name="invalid_phone_number_length_toast">Invalid phone number length</string>
+
+    <!-- contact select activity -->
+    <string name="contacts_label"><b><font size="18">Contacts</font></b></string>
+    <string name="no_contacts_message">No contacts created yet! Create a contact:</string>
+
+
+    <!-- notification text -->
+    <string name="notification_time_toast">Notification time!</string>
+    <string name="notification_time_for">It\'s Notification time for</string>
+    <string name="call_them">Call them!</string>
+
+    <!-- notification channel info -->
+    <string name="notification_channel_name">AppNotificationChannel</string>
+    <string name="notification_channel_description">Notification channel</string>
+
+
+</resources>
