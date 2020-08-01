@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- app & activity titles -->
-    <string name="app_name">Owl</string>
+    <string name="app_name">Schedule Notifications</string>
     <string name="contacts">Contacts</string>
 
     <!-- contacts tab -->
