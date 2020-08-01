@@ -55,8 +55,8 @@ public class NotificationBroadcastReceiver extends BroadcastReceiver {
     // this is called by NotificationScheduler to create an intent to enter into this BroadcastReceiver;
     // this is a deep link intent, and needs the task stack
     public static PendingIntent getReminderPendingIntent(Context context, Contact contact, boolean isOneTime) {
-        int notificationID = isOneTime ? -contact.getId() : contact.getId();    // we need to keep one off notifications (snoozed notifications * ones triggered "now" from the options menu) separate
-        Intent broadcastAction = new Intent(context, NotificationBroadcastReceiver.class);
+        int notificationID = isOneTime ? -contact.getId() : contact.getId();    // we're only using recurring notifications in this project, but if we wanted one-off ones, we could use the isOneTime
+        Intent broadcastAction = new Intent(context, NotificationBroadcastReceiver.class);      // to identify them and set the notificationID to the negative of the contact ID to set them apart
         String bitmapString = Converters.serializeToJson(contact);
         broadcastAction.putExtra(CONTACT, bitmapString);
         return PendingIntent.getBroadcast(context, notificationID, broadcastAction, PendingIntent.FLAG_CANCEL_CURRENT);
