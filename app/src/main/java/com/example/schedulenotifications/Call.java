@@ -1,14 +1,11 @@
 package com.example.schedulenotifications;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import com.example.schedulenotifications.models.Contact;
-import com.example.schedulenotifications.repositories.ContactRepository;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
 
 // activity to handle call intents
@@ -26,7 +23,6 @@ public class Call extends AppCompatActivity {
 
     public void handleCallIntent(Contact contact) {
         Context context = getApplicationContext();
-        ContactRepository contactRepository = new ContactRepository(getApplication());
 
         // set up intent & launch activity for call
         String phoneNumber = getFormattedPhoneNumber(contact);
